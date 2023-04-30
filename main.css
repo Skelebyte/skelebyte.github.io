@@ -4,7 +4,7 @@ html {
   
   .randomise-text {
     color: rgb(36, 182, 36);
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Space Mono" monospace, bold;
     user-select: none;
   }
   
@@ -20,7 +20,7 @@ html {
     opacity: 0;
     transform: translateY(250%);
   
-    animation: fade-in 3s ease forwards, slide-up 1.5s ease 1.5s forwards;
+    animation: fade-in 3s ease forwards, slide-up 2s ease 2s forwards;
   }
   
   .content {
