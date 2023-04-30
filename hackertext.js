@@ -24,7 +24,7 @@ window.onload = () => {
       }
 
       iterations += 1 / 3;
-    }, 100);
+    }, 50);
 
     function checkIfTextFinished() {
       const doneHeadings = document.querySelectorAll('.done');
