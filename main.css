@@ -16,17 +16,17 @@ html {
   
   .title {
     text-align: center;
-    font-size: 5rem;
+    font-size: 7rem;
     opacity: 0;
     transform: translateY(250%);
-  
+    transform: fixed;
     animation: fade-in 3s ease forwards, slide-up 2s ease 2s forwards;
   }
   
   .content {
     opacity: 0;
     position: absolute;
-    font-size: 2.5rem;
+    font-size: 5rem;
     top: 50%;
     left: 0%;
     transform: translateY(-50%);
