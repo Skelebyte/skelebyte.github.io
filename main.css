@@ -19,7 +19,7 @@ html {
     font-size: 7rem;
     opacity: 0;
     transform: translateY(250%);
-    transform: fixed;
+    position: fixed;
     animation: fade-in 3s ease forwards, slide-up 2s ease 2s forwards;
   }
   
