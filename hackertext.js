@@ -17,9 +17,21 @@ window.onload = () => {
         })
         .join("");
 
-      if (iterations >= heading.dataset.value.length) clearInterval(interval);
+      if (iterations >= heading.dataset.value.length) {
+        clearInterval(interval);
+        heading.classList.add('done');
+        checkIfTextFinished();
+      }
 
       iterations += 1 / 3;
     }, 30);
+
+    function checkIfTextFinished() {
+      const doneHeadings = document.querySelectorAll('.done');
+      if (doneHeadings.length === headings.length) {
+        const fadeInUpElement = document.querySelector('.fade-in-up');
+        fadeInUpElement.classList.add('done');
+      }
+    }
   });
 };
