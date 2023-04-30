@@ -4,7 +4,7 @@ html {
   
   .randomise-text {
     color: rgb(36, 182, 36);
-    font-family: "Space Mono" monospace, bold;
+    font-family: "Space Mono", monospace;
     user-select: none;
   }
   
