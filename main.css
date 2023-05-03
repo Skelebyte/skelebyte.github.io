@@ -1,5 +1,6 @@
 html {
     background-color: #222222;
+    font-family: "Space Mono", monospace;
   }
   
   .randomise-text {
@@ -12,6 +13,7 @@ html {
     text-shadow:
       0 0 0.125em rgb(71, 109, 71),
       0 0 0.25em currentColor ;
+      user-select: none;
   }
   
   .title {
@@ -20,17 +22,84 @@ html {
     opacity: 0;
     transform: translateY(250%);
     animation: fade-in 3s ease forwards, slide-up 2s ease 2s forwards;
+    user-select: none;
   }
   
-  .content {
+  .stillTitle {
+    color: rgb(36, 182, 36);
+    text-align: center;
+    font-size: 7rem;
+    opacity: 1;
+    transform: translateY(-10%);
+    user-select: none;
+  }
+  
+  .contentMain {
     opacity: 0;
     position: absolute;
     font-size: 2.5rem;
-    top: 50%;
-    left: 0%;
+
     transform: translateY(-50%);
     animation: fade-in 3s ease 3s forwards;
     font-family: "Space Mono", monospace;
+    color: rgb(36, 182, 36);
+  }
+  .content {
+    opacity: 1;
+    
+    font-size: 2.5rem;
+
+    /*transform: translateY(-50%);*/
+    font-family: "Space Mono", monospace;
+    color: rgb(36, 182, 36);
+  }
+
+  
+  body {
+    position: relative;
+    height: 100vh;
+    margin: 0;
+  }
+  .navlinks {
+    text-align: center;
+  }
+
+  .navlinksMain {
+    text-align: center;
+  }
+
+  .navlinksMain li {
+    display: flex;
+    display: inline-block;
+
+    padding: 0px 100px;
+    
+    opacity: 0;
+    font-size: 2.5rem;
+
+    animation: fade-in 3s ease 3s forwards;
+    font-family: "Space Mono", monospace;
+    color: rgb(36, 182, 36);
+  }
+  .navlinksMain li a {
+    text-decoration:none;
+    color: rgb(36, 182, 36);
+  }
+  .navlinks li {
+    display: flex;
+    display: inline-block;
+
+    padding: 0px 100px;
+    
+    opacity: 1;
+    font-size: 2.5rem;
+
+
+    font-family: "Space Mono", monospace;
+    color: rgb(36, 182, 36);
+  }
+  .navlinks li a {
+    text-decoration:none;
     color: rgb(36, 182, 36);
   }
   button {
@@ -38,23 +107,27 @@ html {
     color: rgb(36, 182, 36);
     border: none;
     padding: 10px 20px;
-    cursor: pointer;
+    
     box-shadow: 0 3px #666;
   }
-  
   button:hover {
-    background-color: #444;
+    background-color: #444
+  }
+  /*.downloadButtons {
+
+
+  }*/
+
+  .container {
+    transform: translateY(500%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
-  body {
-    position: relative;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  h1 {
-    color: rgb(36, 182, 36);
-    font-size: 5rem;
+  .centeredContent {
+    justify-self: center;
+    align-self: center;
   }
   
   @keyframes fade-in {
@@ -71,7 +144,7 @@ html {
       transform: translateY(250%);
     }
     100% {
-      transform: translateY(-30%);
+      transform: translateY(-10%);
     }
   }
   
