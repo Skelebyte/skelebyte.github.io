@@ -29,9 +29,21 @@ html {
     top: 50%;
     left: 0%;
     transform: translateY(-50%);
-    animation: fade-in 12s ease 5s forwards;
+    animation: fade-in 3s ease 3s forwards;
     font-family: "Space Mono", monospace;
     color: rgb(36, 182, 36);
+  }
+  button {
+    background-color: #222222;
+    color: rgb(36, 182, 36);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 3px #666;
+  }
+  
+  button:hover {
+    background-color: #444;
   }
   
   body {
